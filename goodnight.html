@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Good Night 🤍</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    font-family: 'Poppins', Arial, sans-serif;
+  }
+
+  /* Floating hearts */
+  .heart {
+    position: absolute;
+    bottom: -20px;
+    font-size: 18px;
+    opacity: 0.7;
+    animation: floatUp linear infinite;
+  }
+
+  @keyframes floatUp {
+    from {
+      transform: translateY(0) scale(1);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateY(-110vh) scale(1.5);
+      opacity: 0;
+    }
+  }
+
+  .heart:nth-child(1) { left: 10%; animation-duration: 7s; }
+  .heart:nth-child(2) { left: 25%; animation-duration: 9s; font-size: 22px; }
+  .heart:nth-child(3) { left: 40%; animation-duration: 8s; }
+  .heart:nth-child(4) { left: 55%; animation-duration: 10s; font-size: 20px; }
+  .heart:nth-child(5) { left: 70%; animation-duration: 7.5s; }
+  .heart:nth-child(6) { left: 85%; animation-duration: 9.5s; font-size: 24px; }
+
+  /* Card */
+  .card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 35px;
+    border-radius: 22px;
+    text-align: center;
+    max-width: 360px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    animation: fadeIn 2s ease;
+    z-index: 2;
+  }
+
+  h1 {
+    color: #2a5298;
+    font-size: 2em;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: #555;
+    font-size: 1.05em;
+    line-height: 1.6;
+  }
+
+  .moon {
+    font-size: 2.5em;
+    margin: 12px 0;
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes glow {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 1; }
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Hearts -->
+  <div class="heart">💗</div>
+  <div class="heart">🤍</div>
+  <div class="heart">💖</div>
+  <div class="heart">🤍</div>
+  <div class="heart">💞</div>
+  <div class="heart">💗</div>
+
+  <!-- Card -->
+  <div class="card">
+    <h1>Good Night po🤍</h1>
+    <div class="moon">🌙</div>
+    <p>
+      I hope you fall asleep feeling safe and calm.<br>
+      Somewhere between the quiet and your dreams,<br>
+      I hope you feel how gently you’re remembered. ILOVEYOUUUU PO
+    </p>
+    <p>Sleep well ✨</p>
+    <div class="from">
+      — ambotkinsako 🤍
+    </div>
+  </div>
+
+</body>
+</html>
